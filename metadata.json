@@ -1,0 +1,5 @@
+{
+  "name": "Gestió de Taules Restaurant",
+  "description": "Aplicació SPA amb React i TypeScript per gestionar les taules d'un restaurant, amb funcions de llistat, creació, eliminació i canvi d'estat.",
+  "requestFramePermissions": []
+}

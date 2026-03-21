@@ -1,0 +1,73 @@
+{
+  "tables": [
+    {
+      "id": "1",
+      "number": 1,
+      "capacity": 2,
+      "status": "Free",
+      "orders": []
+    },
+    {
+      "id": "2",
+      "number": 2,
+      "capacity": 4,
+      "status": "Free",
+      "orders": []
+    },
+    {
+      "id": "3",
+      "number": 3,
+      "capacity": 6,
+      "status": "Free",
+      "orders": []
+    },
+    {
+      "id": "4",
+      "number": 10,
+      "capacity": 8,
+      "status": "Free",
+      "orders": []
+    },
+    {
+      "id": "5",
+      "number": 12,
+      "capacity": 4,
+      "status": "Occupied",
+      "orders": []
+    },
+    {
+      "id": "6",
+      "number": 15,
+      "capacity": 2,
+      "status": "Occupied",
+      "orders": []
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "jona",
+      "email": "jona@test.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "pedro",
+      "email": "pedro@test.com",
+      "password": "1234"
+    },
+    {
+      "id": "3",
+      "name": "mar",
+      "email": "mar@test.com",
+      "password": "1234"
+    },
+    {
+      "id": "0cba",
+      "name": "pepeep",
+      "email": "pepe@garcia",
+      "password": "1234"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
