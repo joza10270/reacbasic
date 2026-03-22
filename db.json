@@ -1,46 +1,32 @@
 {
   "tables": [
     {
-      "id": "1",
-      "number": 1,
-      "capacity": 2,
+      "number": "45325",
+      "capacity": "5",
       "status": "Free",
-      "orders": []
+      "orders": [],
+      "id": "m8NuJ7aUN5c"
     },
     {
-      "id": "2",
-      "number": 2,
-      "capacity": 4,
+      "number": "324324",
+      "capacity": "33",
       "status": "Free",
-      "orders": []
+      "orders": [],
+      "id": "birIi713Q4U"
     },
     {
-      "id": "3",
-      "number": 3,
-      "capacity": 6,
+      "number": "4243",
+      "capacity": "4324",
       "status": "Free",
-      "orders": []
+      "orders": [],
+      "id": "OluN9nG0WTY"
     },
     {
-      "id": "4",
-      "number": 10,
-      "capacity": 8,
+      "number": "324234",
+      "capacity": "102",
       "status": "Free",
-      "orders": []
-    },
-    {
-      "id": "5",
-      "number": 12,
-      "capacity": 4,
-      "status": "Occupied",
-      "orders": []
-    },
-    {
-      "id": "6",
-      "number": 15,
-      "capacity": 2,
-      "status": "Occupied",
-      "orders": []
+      "orders": [],
+      "id": "qK_4xRO3yb0"
     }
   ],
   "users": [

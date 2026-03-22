@@ -3,6 +3,7 @@ import { UserContext } from './../context/AuthContext';
 import React from 'react';
 import { useState, useContext, useEffect } from 'react'
 import { TableItem } from './TableItem';
+import { TableAdd } from './AddTableForm'
 
 
 
@@ -16,6 +17,10 @@ export const TableList = () => {
    const [ successMessage, setSuccessMessage ] = useState('');
    const [ error, setErrors ] = useState('');
     const [ tables, setTables ] = useState([]);
+
+    // Para altenrar el boton y el fomualrio solo se nesecita este estado 
+    const [ showForm, setShowForm ] = useState(false)
+    
 
    const searchTables = async () => {
         setErrors('');
@@ -42,7 +47,7 @@ export const TableList = () => {
 
    useEffect(() => {
        searchTables()
-   }, [authToken])
+   }, [authToken, ])
   
    return (
        <div className="container py-3">
@@ -50,10 +55,18 @@ export const TableList = () => {
                 Lisatado de tablas 
             </h1>
 
+            {/* Creo el boton para ir cambiando entre salir y añadir mesa */}
+            <button onClick={() => setShowForm(!showForm)}>
+                {showForm ? 'Salir' : 'Añadir mesa'}
+            </button>
+
+            {/* Si es true me muetsra el formulario */}
+            {showForm && <TableAdd onTableAdd={searchTables}/>}
+
             <div className="row g-3">
                 {tables.map(table => (
                     <div key={table.id} className="col-12 col-md-6 col-lg-4">
-                        <TableItem table={table} />
+                        <TableItem table={table} onDeleteTable={searchTables} />
                     </div>
                 ))}
             </div>
